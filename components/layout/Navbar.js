@@ -15,12 +15,12 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 
-import { Logo } from '../components/Logo'
+import { Logo } from '../Logo'
 import { ThemeToggleButton } from './ThemeToggleButton'
 
 const LinkItem = ({ href, path, children }) => {
   const active = path === href
-  const inactiveColor = useColorModeValue('gray.200', 'whiteAlpha.900')
+  const inactiveColor = useColorModeValue('black', 'whiteAlpha.900')
   return (
     <NextLink href={href}>
       <Link
@@ -41,7 +41,7 @@ export const Navbar = ({ path, ...rest }) => {
       as="nav"
       w="100%"
       bg={useColorModeValue('#ffffff40', '#20202380')}
-      style={{ backdropFilter: 'blur(10px)' }}
+      style={{ backdropFilter: 'blur(20px)' }}
       zIndex={1}
       {...rest}
     >
